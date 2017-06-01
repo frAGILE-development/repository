@@ -1,0 +1,24 @@
+apply plugin : 'java'
+
+dependencies {
+	compile files('lib/resources.jar')
+}
+//assuming we're in the java directory
+jar {
+	manifest {
+		attributes 'Implementation-Title' : 'M2',
+		'Implementation-Version' : '1.0',
+		'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+		'Class-Path' : '../../lib/resources.jar'
+
+	}
+}
+//Gradle run command:
+//gradle -b bwatson35.gradle build/javadoc/clean/compileJava/jar
+
+//To run the program:
+//java -jar M2.jar
+
+repositories {
+	mavenCentral()
+}
