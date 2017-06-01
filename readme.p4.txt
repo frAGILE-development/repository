@@ -1,1 +1,2 @@
-Last bit of useless stuff
+jordan shartar
+jshartar6@gatech.edu
