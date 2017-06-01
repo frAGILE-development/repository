@@ -32,13 +32,8 @@ public class Person2 {
     private String calc(String input) {
         //Person 2 put your implementation here
         String mess = "";
-        while (input.length() != 0) {
-            int i = (int) Math.floor(Math.random() * s.length());
-            char newChar = s.charAt(i);
-            input = input.substring(0, i) + input.substring(i + 1);
-            mess += newChar;
-        }
-        return mess;
+        int i = 2 % input.length();
+        return input.substring(i) + input.substring(0, i);
     }
     /**
      * Return a string rep of this object
