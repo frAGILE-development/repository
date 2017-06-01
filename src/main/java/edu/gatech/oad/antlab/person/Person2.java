@@ -31,14 +31,14 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-      String mess = "";
-      while (input.length() != 0) {
-        int i = (int) Math.floor(Math.random() * input.length());
-        char newChar = input.charAt(i);
-        input = input.substring(0, i) + input.substring(i + 1);
-        mess += newChar;
-      }
-      return mess;
+	    String mess = "";
+	    while (input.length() != 0) {
+			int i = (int) Math.floor(Math.random() * input.length());
+			char newChar = input.charAt(i);
+			input = input.substring(0, i) + input.substring(i + 1);
+			mess += newChar;
+	    }
+	    return mess;
 	}
 	/**
 	 * Return a string rep of this object
